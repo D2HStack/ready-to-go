@@ -36,7 +36,7 @@ function App() {
     <>
       <Logo text="Ready to Go"></Logo>
       <hr></hr>
-      <div>
+      <div className="container">
         <div className="main">
           <div className="pad">
             <Toggle
@@ -67,8 +67,8 @@ function App() {
             className={flag ? "message bg-green" : "message bg-red"}
           ></Message>
         </div>
+        <Footer text="Made with React at le Reacteur by Hoang"></Footer>
       </div>
-      <Footer text="Made with React at le Reacteur by Hoang"></Footer>
     </>
   );
 }
