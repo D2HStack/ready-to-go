@@ -4,22 +4,24 @@ function Toggle(props) {
   const { counter, setCounter } = props;
   return (
     <>
-      <button
-        className={counter ? "active" : "passive"}
-        onClick={() => {
-          setCounter(true);
-        }}
-      >
-        ON
-      </button>
-      <button
-        className={counter ? "passive" : "active"}
-        onClick={() => {
-          setCounter(false);
-        }}
-      >
-        OFF
-      </button>
+      <div className="toggle-container">
+        <button
+          className={counter ? "toggle active" : "toggle passive"}
+          onClick={() => {
+            setCounter(true);
+          }}
+        >
+          ON
+        </button>
+        <button
+          className={counter ? "toggle passive" : "toggle active"}
+          onClick={() => {
+            setCounter(false);
+          }}
+        >
+          OFF
+        </button>
+      </div>
     </>
   );
 }

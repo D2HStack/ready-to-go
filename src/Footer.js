@@ -4,7 +4,9 @@ function Footer(props) {
   const { text, render } = props;
   return (
     <>
-      <span className={render}>{text}</span>
+      <div className="footer-container">
+        <span className="footer">{text}</span>
+      </div>
     </>
   );
 }

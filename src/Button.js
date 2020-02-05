@@ -1,13 +1,14 @@
 import React from "react";
 
 function Button(props) {
-  const { set, setReset } = props;
+  const { reset, setReset } = props;
   return (
     <>
       <button
         onClick={() => {
           setReset(true);
         }}
+        className={reset ? "button active" : "button passive"}
       >
         Reset
       </button>

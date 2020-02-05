@@ -34,37 +34,41 @@ function App() {
 
   return (
     <>
-      <Logo render="logo" text="Ready to Go"></Logo>
+      <Logo text="Ready to Go"></Logo>
+      <hr></hr>
       <div>
-        <div>
-          <Toggle
-            counter={toggle1}
-            setCounter={setToggle1}
-            render="toggle"
-          ></Toggle>
-          <Toggle
-            counter={toggle2}
-            setCounter={setToggle2}
-            render="toggle"
-          ></Toggle>
-          <Toggle
-            counter={toggle3}
-            setCounter={setToggle3}
-            render="toggle"
-          ></Toggle>
-          <Toggle
-            counter={toggle4}
-            setCounter={setToggle4}
-            render="toggle"
-          ></Toggle>
+        <div className="main">
+          <div className="pad">
+            <Toggle
+              counter={toggle1}
+              setCounter={setToggle1}
+              render="toggle"
+            ></Toggle>
+            <Toggle
+              counter={toggle2}
+              setCounter={setToggle2}
+              render="toggle"
+            ></Toggle>
+            <Toggle
+              counter={toggle3}
+              setCounter={setToggle3}
+              render="toggle"
+            ></Toggle>
+            <Toggle
+              counter={toggle4}
+              setCounter={setToggle4}
+              render="toggle"
+            ></Toggle>
+            <Button setReset={setReset}></Button>
+          </div>
+          <Message
+            active={flag}
+            render="message"
+            className={flag ? "message bg-green" : "message bg-red"}
+          ></Message>
         </div>
-        <Button setReset={setReset}></Button>
-        <Message active={flag} render="message"></Message>
       </div>
-      <Footer
-        render="footer"
-        text="Made with React at le Reacteur by Hoang"
-      ></Footer>
+      <Footer text="Made with React at le Reacteur by Hoang"></Footer>
     </>
   );
 }

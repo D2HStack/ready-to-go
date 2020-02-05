@@ -1,9 +1,9 @@
 import React from "react";
 function Logo(props) {
-  const { text, render } = props;
+  const { text } = props;
   return (
     <>
-      <span className={render}>{text}</span>
+      <span className="logo">{text}</span>
     </>
   );
 }

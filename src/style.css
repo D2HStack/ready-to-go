@@ -1,3 +1,70 @@
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pad {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  align-items: center;
+}
+
 .active {
+  background-color: #5140c8;
+  color: white;
+}
+
+.passive {
+  color: black;
+}
+.toggle-container {
+  /* display: flex;
+  flex-direction: row;
+  align-items: space-between; */
+  margin: 10px 40px;
+}
+
+.toggle {
+  font-size: 16px;
+}
+
+.button {
+  font-size: 16px;
+}
+
+.message-container {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.message {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  width: 150px;
+  text-align: center;
+}
+
+.bg-red {
   background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.footer-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

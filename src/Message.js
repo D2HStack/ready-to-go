@@ -1,10 +1,12 @@
 import React from "react";
 
 function Message(props) {
-  const { active } = props;
+  const { active, className } = props;
   return (
     <>
-      <span>{active ? "Go ! " : "No Way ! "}</span>
+      <div className="message-container">
+        <span className={className}>{active ? "Go ! " : "No Way ! "}</span>
+      </div>
     </>
   );
 }
