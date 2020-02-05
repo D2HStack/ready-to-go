@@ -6,6 +6,7 @@ import Logo from "./Logo";
 import Toggle from "./Toggle";
 import Message from "./Message";
 import Footer from "./Footer";
+import Button from "./Button";
 
 function App() {
   const [toggle1, setToggle1] = useState(false);
@@ -20,14 +21,16 @@ function App() {
     flag = false;
   }
 
-  //   let toggle =[];
-  //   let setToggle[];
-  // const numButton = 4;
-  //   for (let i = 1; i <= numButton; i++) {
-  // const [toggleTemp
-  //   }
-
-  // const [reset, setReset] = useState(false);
+  const [reset, setReset] = useState(false);
+  if (reset) {
+    // all toggle to be false
+    setToggle1(false);
+    setToggle2(false);
+    setToggle3(false);
+    setToggle4(false);
+    // reset teh button reset
+    setReset(false);
+  }
 
   return (
     <>
@@ -55,6 +58,7 @@ function App() {
             render="toggle"
           ></Toggle>
         </div>
+        <Button setReset={setReset}></Button>
         <Message active={flag} render="message"></Message>
       </div>
       <Footer
